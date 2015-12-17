@@ -9,18 +9,18 @@
 				
 					
 			ul(class="nav navbar-nav")
-				li(class="nav-item {active: currentUrl === '/'}")
+				li(class={active: currentUrl === '/'} class="nav-item")
 					a(class="nav-link" href="/")
 						|Home
 
-				li(class="nav-item {active: currentUrl === '/'}")
+				li(class={active: currentUrl === '/schedule'} class="nav-item")
 					a(class="nav-link" href="/schedule")
 						|Schedule
 
-				li(class="nav-item {active: currentUrl === '/'}")
+				li(class={active: currentUrl === '/eoddset'} class="nav-item")
 					a(class="nav-link disabled" href="/eoddset")
 						|eOddset
 
-				li(class="nav-item {active: currentUrl === '/'}")
+				li(class={active: currentUrl === '/users'} class="nav-item")
 					a(class="nav-link disabled" href="/users")
 						|About

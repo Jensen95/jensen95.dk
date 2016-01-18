@@ -36,8 +36,18 @@
     <Compile Include="routes\schedule.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
     <Content Include="package.json" />
     <Content Include="Procfile" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\stylesheets\style.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>public\stylesheets\style.css</DependentUpon>
+    </Content>
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\eoddset.jade" />

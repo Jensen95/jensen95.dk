@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var pgp = require("pg-promise")(/*options*/);
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -11,6 +12,8 @@ var schedule = require('./routes/schedule');
 var eOddset = require('./routes/eoddset');
 
 var app = express();
+
+var db = pgp("postgres://atggqjgiuiqgjg:JrelYXLYHWswIyMAygn-324irB@ec2-107-22-197-152.compute-1.amazonaws.com:5432/d9nujs4eqrhqt7");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
